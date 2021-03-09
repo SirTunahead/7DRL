@@ -3,6 +3,9 @@ extends Area2D
 onready var ray = $RayCast2D
 const ENEMY_SCENE = preload("res://Enemy.tscn")
 
+onready var healthlabel = $HealthLabel
+onready var manalabel = $ManaLabel
+
 var strength = 10
 var dexterity = 10
 var vitality = 10
@@ -32,10 +35,14 @@ func calc_stats():
 	max_health = (vitality*2) + strength/2
 	max_mana = magic/2
 	
+	
 	if current_health == null:
 		current_health = max_health
 	if current_mana == null:
 		current_mana = max_mana
+		
+	healthlabel.text = "HP:" + str(getCurrentHealth())+ "/" + str(getMaxHealth())
+	manalabel.text = "Mana:" + str(getCurrentMana())+"/"+str(getMaxMana())
 
 func _unhandled_input(event):
 	for dir in inputs.keys():

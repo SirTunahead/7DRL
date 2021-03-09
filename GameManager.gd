@@ -2,8 +2,8 @@ extends Node2D
 
 onready var player = $Player
 onready var enemy = $Enemy
-onready var healthlabel = $HealthLabel
-onready var manalabel = $ManaLabel
+#onready var healthlabel = $HealthLabel
+#onready var manalabel = $ManaLabel
 onready var turn = $TurnLabel
 
 var turncounter = 1
@@ -20,8 +20,8 @@ func start_enemy_turn():
 	
 func start_player_turn():
 	
-	healthlabel.text = "HP:" + str(player.getCurrentHealth())+ "/" + str(player.getMaxHealth())
-	manalabel.text = "Mana:" + str(player.getCurrentMana())+"/"+str(player.getMaxMana())
+	#healthlabel.text = "HP:" + str(player.getCurrentHealth())+ "/" + str(player.getMaxHealth())
+	#manalabel.text = "Mana:" + str(player.getCurrentMana())+"/"+str(player.getMaxMana())
 	yield(player, "end_turn")
 	turn.text = "Turn: " + str(turncounter)
 	start_enemy_turn()

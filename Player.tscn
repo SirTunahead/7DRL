@@ -20,3 +20,26 @@ shape = SubResource( 1 )
 collide_with_areas = true
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="HealthLabel" type="Label" parent="."]
+margin_left = -157.155
+margin_top = 48.1376
+margin_right = -117.155
+margin_bottom = 62.1376
+text = "Health"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ManaLabel" type="Label" parent="."]
+margin_left = -158.099
+margin_top = 61.3518
+margin_right = -118.099
+margin_bottom = 75.3518
+text = "Mana"
+__meta__ = {
+"_edit_use_anchors_": false
+}

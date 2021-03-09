@@ -15,7 +15,8 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -16, -80 )
+position = Vector2( 61.129, -16.0197 )
+z_index = 1
 
 [node name="Room" parent="." instance=ExtResource( 4 )]
 
@@ -27,26 +28,6 @@ position = Vector2( 352, 224 )
 
 [node name="Room4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 0, 224 )
-
-[node name="ManaLabel" type="Label" parent="."]
-margin_left = -96.0
-margin_top = 416.0
-margin_right = -54.0
-margin_bottom = 430.0
-text = "Mana"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HealthLabel" type="Label" parent="."]
-margin_left = -96.0
-margin_top = 398.0
-margin_right = -54.0
-margin_bottom = 412.0
-text = "Health"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TurnLabel" type="Label" parent="."]
 margin_left = 864.0
