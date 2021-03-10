@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Entity/GameManager.gd" type="Script" id=1]
+[ext_resource path="res://Entity/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Rooms/Room2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Rooms/Room.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Entity/Enemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Rooms/Room3.tscn" type="PackedScene" id=6]
+
+[node name="GameManager" type="Node2D"]
+position = Vector2( 96, 128 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 61.129, -16.0197 )
+z_index = 1
+
+[node name="Room" parent="." instance=ExtResource( 4 )]
+
+[node name="Room2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 352, 128 )
+
+[node name="Room3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 384, 224 )
+
+[node name="TurnLabel" type="Label" parent="."]
+visible = false
+margin_left = 864.0
+margin_top = -112.0
+margin_right = 908.0
+margin_bottom = -98.0
+text = "Turn: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enemy2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 16, -16 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 336, 16 )
+
+[node name="Enemy" parent="." instance=ExtResource( 5 )]
+position = Vector2( 144, 16 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 5 )]
+position = Vector2( -48, -48 )

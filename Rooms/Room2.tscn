@@ -1,0 +1,183 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Rooms/Wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/floor.png" type="Texture" id=2]
+
+[node name="Room2" type="Node2D"]
+
+[node name="Wall2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -48, 16 )
+spriteID = 6
+
+[node name="Wall7" parent="." instance=ExtResource( 1 )]
+position = Vector2( -16, 16 )
+spriteID = 1
+
+[node name="Wall9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 48, 16 )
+spriteID = 1
+
+[node name="Wall3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, 16 )
+spriteID = 7
+
+[node name="Wall5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 16, -240 )
+
+[node name="Wall6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 48, -240 )
+
+[node name="Wall15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, -16 )
+spriteID = 2
+
+[node name="Wall17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, -80 )
+spriteID = 2
+
+[node name="Wall18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, -112 )
+spriteID = 2
+
+[node name="Wall19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, -48 )
+spriteID = 2
+
+[node name="Wall20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, -144 )
+spriteID = 2
+
+[node name="Wall22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, -208 )
+spriteID = 2
+
+[node name="Wall23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, -240 )
+spriteID = 4
+
+[node name="Wall24" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, -176 )
+spriteID = 2
+
+[node name="Wall4" parent="." instance=ExtResource( 1 )]
+position = Vector2( -48, -16 )
+spriteID = 3
+
+[node name="Wall16" parent="." instance=ExtResource( 1 )]
+position = Vector2( -48, -48 )
+spriteID = 3
+
+[node name="Wall21" parent="." instance=ExtResource( 1 )]
+position = Vector2( -48, -112 )
+spriteID = 3
+
+[node name="Wall25" parent="." instance=ExtResource( 1 )]
+position = Vector2( -48, -176 )
+spriteID = 3
+
+[node name="Wall26" parent="." instance=ExtResource( 1 )]
+position = Vector2( -48, -80 )
+spriteID = 3
+
+[node name="Wall28" parent="." instance=ExtResource( 1 )]
+position = Vector2( -48, -240 )
+spriteID = 5
+
+[node name="Wall29" parent="." instance=ExtResource( 1 )]
+position = Vector2( -48, -208 )
+spriteID = 3
+
+[node name="Wall8" parent="." instance=ExtResource( 1 )]
+position = Vector2( -16, -240 )
+
+[node name="floor" type="Sprite" parent="."]
+position = Vector2( -16, -208 )
+texture = ExtResource( 2 )
+
+[node name="floor2" type="Sprite" parent="."]
+position = Vector2( 16, -208 )
+texture = ExtResource( 2 )
+
+[node name="floor3" type="Sprite" parent="."]
+position = Vector2( 48, -208 )
+texture = ExtResource( 2 )
+
+[node name="floor5" type="Sprite" parent="."]
+position = Vector2( -16, -176 )
+texture = ExtResource( 2 )
+
+[node name="floor6" type="Sprite" parent="."]
+position = Vector2( 16, -176 )
+texture = ExtResource( 2 )
+
+[node name="floor7" type="Sprite" parent="."]
+position = Vector2( 48, -176 )
+texture = ExtResource( 2 )
+
+[node name="floor8" type="Sprite" parent="."]
+position = Vector2( -16, -144 )
+texture = ExtResource( 2 )
+
+[node name="floor9" type="Sprite" parent="."]
+position = Vector2( 16, -144 )
+texture = ExtResource( 2 )
+
+[node name="floor10" type="Sprite" parent="."]
+position = Vector2( 48, -144 )
+texture = ExtResource( 2 )
+
+[node name="floor11" type="Sprite" parent="."]
+position = Vector2( -16, -112 )
+texture = ExtResource( 2 )
+
+[node name="floor12" type="Sprite" parent="."]
+position = Vector2( 16, -112 )
+texture = ExtResource( 2 )
+
+[node name="floor13" type="Sprite" parent="."]
+position = Vector2( 48, -112 )
+texture = ExtResource( 2 )
+
+[node name="floor14" type="Sprite" parent="."]
+position = Vector2( -16, -80 )
+texture = ExtResource( 2 )
+
+[node name="floor15" type="Sprite" parent="."]
+position = Vector2( 16, -80 )
+texture = ExtResource( 2 )
+
+[node name="floor16" type="Sprite" parent="."]
+position = Vector2( 48, -80 )
+texture = ExtResource( 2 )
+
+[node name="floor17" type="Sprite" parent="."]
+position = Vector2( -16, -48 )
+texture = ExtResource( 2 )
+
+[node name="floor18" type="Sprite" parent="."]
+position = Vector2( 16, -48 )
+texture = ExtResource( 2 )
+
+[node name="floor19" type="Sprite" parent="."]
+position = Vector2( 48, -48 )
+texture = ExtResource( 2 )
+
+[node name="floor20" type="Sprite" parent="."]
+position = Vector2( -16, -16 )
+texture = ExtResource( 2 )
+
+[node name="floor23" type="Sprite" parent="."]
+position = Vector2( 16, 16 )
+texture = ExtResource( 2 )
+
+[node name="floor21" type="Sprite" parent="."]
+position = Vector2( 16, -16 )
+texture = ExtResource( 2 )
+
+[node name="floor22" type="Sprite" parent="."]
+position = Vector2( 48, -16 )
+texture = ExtResource( 2 )
+
+[node name="floor4" type="Sprite" parent="."]
+position = Vector2( -48, -144 )
+texture = ExtResource( 2 )

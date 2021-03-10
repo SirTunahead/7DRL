@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="7DRL"
-run/main_scene="res://GameManager.tscn"
+run/main_scene="res://Entity/GameManager.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -34,4 +34,5 @@ window/stretch/aspect="keep"
 
 [rendering]
 
+environment/default_clear_color=Color( 0.0431373, 0.0352941, 0.0352941, 1 )
 environment/default_environment="res://default_env.tres"
